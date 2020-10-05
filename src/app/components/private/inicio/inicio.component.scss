@@ -1,0 +1,29 @@
+$principal: #8ac54b;
+$colorletras: #54595f;
+
+.mapa{
+    width: 600px;
+    height: 400px;
+}
+
+.imagenmapa{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    img{
+        
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    iframe{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+h6{
+    padding-top: 5px;
+    text-align: center;
+}

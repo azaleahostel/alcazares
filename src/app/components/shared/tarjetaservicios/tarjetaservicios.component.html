@@ -1,0 +1,114 @@
+<div class="contenedor" *ngIf="(isHandset$ | async)===false" >
+
+
+    <mat-card>
+        <mat-card-header>
+            
+            <mat-card-title> <mat-icon>loyalty</mat-icon></mat-card-title>
+            <mat-card-title>Revisión Técnico Mecánica de Vehículos livianos</mat-card-title>
+        </mat-card-header>
+            
+        
+        
+        
+        <mat-card-content>Realizamos todo el proceso de Revisión Técnico Mecánica y Emisiones Contaminantes, que evalúa:
+            Inspección Sensorial
+            Prueba de Luces
+            Suspensión
+            Sistema de Frenos
+            Alineación y análisis de gases</mat-card-content>
+       
+        <mat-card-actions>
+            <button [routerLink]="['/Nuestra']"  mat-raised-button >Nuestra Empresa</button>
+        </mat-card-actions>
+
+        
+         
+
+    </mat-card>
+
+    
+    <mat-card>
+        
+        <mat-card-header>
+            
+            <mat-card-title> <mat-icon>assignment_ind</mat-icon></mat-card-title>
+            <mat-card-title>Revisión Técnico Mecánica de Motos</mat-card-title>
+        
+        </mat-card-header>
+        
+        <mat-card-content>Realizamos todo el proceso de Revisión Técnico Mecánica y Emisiones Contaminantes, que evalúa:
+            Inspección Sensorial
+            Prueba de Luces
+            Suspensión
+            Sistema de Frenos
+            Alineación y análisis de gases</mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary">PORTAL ADMINISTRATIVO</button>
+        </mat-card-actions>
+               
+
+    </mat-card>
+    
+    
+
+</div>
+<div class="contenedormedium" *ngIf="(isHandset$ | async)===true" >
+
+    <div class="sub">
+    
+    <mat-card>
+        <mat-card-header>
+            
+            <mat-card-title> <mat-icon>loyalty</mat-icon></mat-card-title>
+            <mat-card-title>Realizamos todo el proceso de Revisión Técnico Mecánica y Emisiones Contaminantes, que evalúa:</mat-card-title>
+        </mat-card-header>
+            
+        
+        
+        
+        <mat-card-content>Realizamos todo el proceso de Revisión Técnico Mecánica y Emisiones Contaminantes, que evalúa:
+            Inspección Sensorial
+            Prueba de Luces
+            Suspensión
+            Sistema de Frenos
+            Alineación y análisis de gases</mat-card-content>
+       
+        <mat-card-actions>
+            <button [routerLink]="['/Nuestra']"  mat-raised-button >Nuestra Empresa</button>
+        </mat-card-actions>
+             
+
+    </mat-card>
+
+    </div>
+
+    <div class="sub">
+    <mat-card>
+  
+        <mat-card-header>
+            
+            <mat-card-title> <mat-icon>schedule</mat-icon></mat-card-title>
+            <mat-card-title>Revisión Técnico Mecánica de Motos</mat-card-title>
+            
+        </mat-card-header>
+        
+        
+        <mat-card-content>Realizamos todo el proceso de Revisión Técnico Mecánica y Emisiones Contaminantes, que evalúa:
+            Inspección Sensorial
+            Prueba de Luces
+            Suspensión
+            Sistema de Frenos
+            Alineación y análisis de gases<</mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button >AGENDA</button>
+        </mat-card-actions>
+       
+       
+               
+
+    </mat-card>
+    </div>
+    
+
+</div>

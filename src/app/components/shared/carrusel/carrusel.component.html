@@ -1,0 +1,39 @@
+<mat-carousel
+  timings="250ms ease-in"
+  [autoplay]="true"
+  interval="5000"
+  color="accent"
+  maxWidth="auto"
+  proportion="40"
+  slides="4"
+  [loop]="true"
+  [hideArrows]="false"
+  [hideIndicators]="true"
+  [useKeyboard]="true"
+  [useMouseWheel]="false"
+  orientation="ltr"
+>
+  <mat-carousel-slide
+    #matCarouselSlide
+    *ngFor="let slide of slides; let i = index"
+    [image]="slide.image"
+    overlayColor="#96ce9345"
+    [hideOverlay]="false"
+  >
+    <!-- <div class="slider">
+      
+      <h1>{{ i }}</h1>
+      <p>disabled: {{ matCarouselSlide.disabled }}</p>
+      <button
+        mat-flat-button
+        (click)="matCarouselSlide.disabled = !matCarouselSlide.disabled"
+      >
+        Click me!
+      </button>
+    </div> -->
+    <div class="slider">
+      <h1>¡TE INVITAMOS A VISITAR NUESTRAS REDES SOCIALES!</h1>
+      <a><img src="../../../../assets/img/botoncomunicar2.png"></a>
+    </div>
+  </mat-carousel-slide>
+</mat-carousel>

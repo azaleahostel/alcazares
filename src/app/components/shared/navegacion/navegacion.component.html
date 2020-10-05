@@ -1,0 +1,164 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      >
+    <mat-toolbar><img src="../../../../assets/img/cachaco 1.png"></mat-toolbar>
+    <mat-divider></mat-divider>
+    <mat-nav-list>
+      <button mat-menu-item
+         [routerLink]="['/Inicio']" 
+         routerLinkActive="router-link-active"
+         (click)="drawer.close()"
+         >
+
+            <mat-icon routerLinkActive="router-link-active">build</mat-icon>
+            <span>Inicio</span>
+          </button>
+          <button mat-menu-item 
+          [routerLink]="['/Nuestra']"
+          routerLinkActive="router-link-active"
+          (click)="drawer.close()"
+          >
+            <mat-icon routerLinkActive="router-link-active" >loyalty</mat-icon>
+            <span>Nuestra Empresa</span>
+          </button>
+          <button mat-menu-item
+          [routerLink]="['/Contactenos']"
+          routerLinkActive="router-link-active"
+          (click)="drawer.close()"
+          >
+            <mat-icon routerLinkActive="router-link-active">perm_phone_msg</mat-icon>
+            <span>Contactenos</span>
+          </button>
+          <button mat-menu-item
+          [routerLink]="['/Revision']"
+          routerLinkActive="router-link-active"
+          (click)="drawer.close()"
+          >
+            <mat-icon routerLinkActive="router-link-active">directions_car</mat-icon>
+            <span>Revision Tecnico Mecanica</span>
+          </button>
+          <button mat-menu-item disabled
+          [routerLink]="['/Portal']"
+          routerLinkActive="router-link-active"
+          (click)="drawer.close()"
+          >
+            <mat-icon routerLinkActive="router-link-active">assignment_ind</mat-icon>
+            <span>Portal</span>
+          </button>
+          <button mat-menu-item
+          [routerLink]="['/Preguntas']"
+          routerLinkActive="router-link-active"
+          (click)="drawer.close()"
+          >
+            <mat-icon routerLinkActive="router-link-active">help_outline</mat-icon>
+            <span>Preguntas</span>
+          </button>
+          <button mat-menu-item
+          [routerLink]="['/Agenda']"
+          routerLinkActive="router-link-active"
+          (click)="drawer.close()"
+          >
+            <mat-icon routerLinkActive="router-link-active">schedule</mat-icon>
+            <span>Agenda</span>
+          </button>
+
+    </mat-nav-list>
+    <mat-divider></mat-divider>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar  class="barra-menu">
+      <div class="imagenlogo"><img src="../../../../assets/img/cachaco 1.png"></div>
+      
+      <div class="menubuscador" >
+        <div class="contenedor"
+        *ngIf="(isHandset$ | async)===false">
+          <mat-form-field appearance="outline">
+            <mat-label>Buscar...</mat-label>
+            <input matInput placeholder="coloca palabras claves">
+            <mat-icon matSuffix>search</mat-icon>
+            
+          </mat-form-field>
+        </div>
+        
+        
+        <button *ngIf="(isHandset$ | async)===true"
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        >        
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <button 
+        mat-icon-button [matMenuTriggerFor]="menu" 
+        aria-label="Example icon-button with a menu" 
+        *ngIf="(isHandset$ | async)===false">
+          <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+            
+ 
+         <button mat-menu-item
+         [routerLink]="['/Inicio']" 
+         routerLinkActive="router-link-active"
+         >
+
+            <mat-icon routerLinkActive="router-link-active">build</mat-icon>
+            <span>Inicio</span>
+          </button>
+          <button mat-menu-item 
+          [routerLink]="['/Nuestra']"
+          routerLinkActive="router-link-active"
+          >
+            <mat-icon routerLinkActive="router-link-active" >loyalty</mat-icon>
+            <span>Nuestra Empresa</span>
+          </button>
+          <button mat-menu-item
+          [routerLink]="['/Contactenos']"
+          routerLinkActive="router-link-active"
+          >
+            <mat-icon routerLinkActive="router-link-active">perm_phone_msg</mat-icon>
+            <span>Contactenos</span>
+          </button>
+          <button mat-menu-item
+          [routerLink]="['/Revision']"
+          routerLinkActive="router-link-active"
+          >
+            <mat-icon routerLinkActive="router-link-active">directions_car</mat-icon>
+            <span>Revision Tecnico Mecanica</span>
+          </button>
+          <button mat-menu-item disabled
+          [routerLink]="['/Portal']"
+          routerLinkActive="router-link-active"
+          >
+            <mat-icon routerLinkActive="router-link-active">assignment_ind</mat-icon>
+            <span>Portal</span>
+          </button>
+          <button mat-menu-item
+          [routerLink]="['/Preguntas']"
+          routerLinkActive="router-link-active"
+          >
+            <mat-icon routerLinkActive="router-link-active">help_outline</mat-icon>
+            <span>Preguntas</span>
+          </button>
+          <button mat-menu-item
+          [routerLink]="['/Agenda']"
+          routerLinkActive="router-link-active"
+          >
+            <mat-icon routerLinkActive="router-link-active">schedule</mat-icon>
+            <span>Agenda</span>
+          </button>
+      </mat-menu>
+        
+
+      </div>
+      
+      
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <app-botoncontacto></app-botoncontacto>
+    <ng-content ></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

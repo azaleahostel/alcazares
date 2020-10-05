@@ -1,0 +1,146 @@
+$principal:#92ce8f;
+$colorletras: #54595f;
+$titulo:  #69c17b;
+
+main{
+    background-image: url(../../../../assets/img/4.png);
+    
+    section{
+        background-color: rgba(255, 255, 255, 0.521);
+    }
+}
+
+.titulo {
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 125px;
+    h1{
+       display: flex;
+       justify-content: center; 
+       align-items: center;
+       background-color: $titulo;
+       width: 46%;
+       height: 50%;
+       color: white;
+       font-size: 27px;
+       font-style: italic;
+    }
+}
+
+.letreros {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  300px 300px;
+}
+
+mat-accordion{
+    
+    display: flex;
+    justify-content: center;
+}
+
+mat-expansion-panel{
+   height: 280px;
+   width: 80%;
+   p{
+       padding-top: 5%;
+   }
+}
+
+ .disable_ripple:hover{
+    background-color: $principal !important;
+}
+pansion-panel-header.mat-expanded,
+.mat-expansion-panel-header.mat-expanded:hover,
+.mat-expansion-panel-header.mat-expanded:focus {
+    background-color: $principal;
+}
+mat-expansion-panel-header{
+    background-color: $principal;
+}    
+        
+        
+mat-panel-title{
+   display: flex;
+   justify-content: center;
+   color: white;
+   font-size: 24px;
+}
+.mapa{
+    width: 600px;
+    height: 400px;
+}
+
+.imagenmapa{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    img{
+        
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    iframe{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+h6{
+    padding-top: 5px;
+    text-align: center;
+}
+    
+@media( max-width: 1000px ){
+    .letreros {
+        display: grid;
+        grid-template-columns: 100% ;
+        grid-template-rows:  380px 380px 358px 380px;
+    }
+    mat-expansion-panel{
+        height: 350px;
+        width: 80%;
+        p{
+            padding-top: 5%;
+        }
+     }
+}    
+
+@media( max-width: 540px ){
+    .letreros {
+        display: grid;
+        grid-template-columns: 100% ;
+        grid-template-rows:  410px 410px 410px 410px;
+    }
+    mat-expansion-panel{
+        height: 400px;
+        width: 80%;
+        p{
+            padding-top: 5%;
+        }
+     }
+     .titulo {
+        padding-top: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height: 125px;
+        h1{
+           display: flex;
+           justify-content: center; 
+           align-items: center;
+           background-color: $titulo;
+           width: 80%;
+           height: 50%;
+           color: white;
+           font-size: 22px;
+           font-style: italic;
+        }
+    }
+}    

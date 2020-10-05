@@ -1,0 +1,82 @@
+$principal: #8ac54b;
+$colorletras: #54595f;
+
+.contenedor{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url(../../../../assets/img/1.png);
+    display: flex;
+    justify-content: space-around;
+    mat-card{
+        width: 17%;
+        max-width: 300px;
+        min-height: 300PX;
+        box-shadow:0 1px 5px 0 gray, 0 1px 10px 0 green;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        mat-card-header{
+            text-align: center;
+            color: $principal;
+        }
+        
+        mat-card-content{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        mat-card-actions{
+            display: flex;
+            justify-content: center;
+            button{
+                color: $colorletras;
+                background-color: rgba(166, 240, 182, 0.281);
+            }
+            button:hover{
+                color: $principal;
+            }
+        }
+    }
+}
+
+.sub{
+    width: 100%;
+    height: 400px;
+    
+    background-image: url(../../../../assets/img/1.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mat-card{
+        width: 60%;
+        min-height: 300PX;
+        box-shadow:0 1px 5px 0 gray, 0 1px 10px 0 green;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        mat-card-header{
+            text-align: center;
+            color: $principal;
+        }
+        
+        mat-card-content{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        mat-card-actions{
+            display: flex;
+            justify-content: center;
+            button{
+                color: $colorletras;
+                background-color: rgba(166, 240, 182, 0.281);
+            }
+            button:hover{
+                color: $principal;
+            }
+        }
+    }
+}

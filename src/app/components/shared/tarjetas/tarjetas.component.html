@@ -1,0 +1,198 @@
+<div class="contenedor" *ngIf="(isHandset$ | async)===false" >
+
+
+    <mat-card>
+        <mat-card-header>
+            
+            <mat-card-title> <mat-icon>loyalty</mat-icon></mat-card-title>
+            <mat-card-title> NUESTROS VALORES</mat-card-title>
+        </mat-card-header>
+            
+        
+        
+        
+        <mat-card-content>Se reflejan en la manera en la que dirigimos nuestra empresa, siempre apegados a la ley y con honestidad y respeto por nuestra gente y por las personas con quienes trabajamos. Conoce más sobre nuestros principios corporativos empresariales.</mat-card-content>
+       
+        <mat-card-actions>
+            <button [routerLink]="['/Nuestra']"  mat-raised-button >Nuestra Empresa</button>
+        </mat-card-actions>
+
+        
+         
+
+    </mat-card>
+
+    
+
+    
+    <mat-card>
+  
+        <mat-card-header>
+            
+            <mat-card-title> <mat-icon>schedule</mat-icon></mat-card-title>
+            <mat-card-title>AGENDA TU REVISION</mat-card-title>
+            <mat-card-subtitle>
+                Horario de atención<br>
+                lunes a viernes<br>
+                de 8:00 a.m. – 5:00pm<br>
+                sábados: 8:00 a.m. – 1:00 pm
+            </mat-card-subtitle>
+        </mat-card-header>
+        
+        
+        <mat-card-content>agenda con anterioridad tu revisión tecnico-mecanica.</mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary">AGENDA</button>
+        </mat-card-actions>
+       
+       
+               
+
+    </mat-card>
+
+    <mat-card>
+        
+        <mat-card-header>
+            
+            <mat-card-title> <mat-icon>assignment_ind</mat-icon></mat-card-title>
+            <mat-card-title>TRABAJA CON NOSOTROS</mat-card-title>
+            <mat-card-subtitle>
+                Horario de atención<br>
+                lunes a viernes<br>
+                de 8:00 a.m. – 5:00pm<br>
+                sábados: 8:00 a.m. – 1:00 pm
+            </mat-card-subtitle>
+        </mat-card-header>
+        
+        <mat-card-content>Si desea contactar a nuestra área de personal utilece este medio.</mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary">PORTAL ADMINISTRATIVO</button>
+        </mat-card-actions>
+               
+
+    </mat-card>
+    <mat-card>
+        
+        <mat-card-header>
+            
+            <mat-card-title> <mat-icon>perm_phone_msg</mat-icon></mat-card-title>
+            <mat-card-title>PQRSFA</mat-card-title>
+            <mat-card-subtitle>
+                Horario de atención<br>
+                lunes a viernes<br>
+                de 8:00 a.m. – 5:00pm<br>
+                sábados: 8:00 a.m. – 1:00 pm
+            </mat-card-subtitle>
+        </mat-card-header>
+        
+        
+        <mat-card-content>Si desea contactar a nuestra área de personal utilece este medio.</mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary">CONTACTANOS</button>
+        </mat-card-actions>
+               
+
+    </mat-card>
+    
+
+</div>
+<div class="contenedormedium" *ngIf="(isHandset$ | async)===true" >
+
+    <div class="sub">
+    
+    <mat-card>
+        <mat-card-header>
+            
+            <mat-card-title> <mat-icon>loyalty</mat-icon></mat-card-title>
+            <mat-card-title> NUESTROS VALORES</mat-card-title>
+        </mat-card-header>
+            
+        
+        
+        
+        <mat-card-content>Se reflejan en la manera en la que dirigimos nuestra empresa, siempre apegados a la ley y con honestidad y respeto por nuestra gente y por las personas con quienes trabajamos. Conoce más sobre nuestros principios corporativos empresariales.</mat-card-content>
+       
+        <mat-card-actions>
+            <button [routerLink]="['/Nuestra']"  mat-raised-button >Nuestra Empresa</button>
+        </mat-card-actions>
+             
+
+    </mat-card>
+
+    </div>
+
+    <div class="sub">
+    <mat-card>
+  
+        <mat-card-header>
+            
+            <mat-card-title> <mat-icon>schedule</mat-icon></mat-card-title>
+            <mat-card-title>AGENDA TU REVISION</mat-card-title>
+            <mat-card-subtitle>
+                Horario de atención<br>
+                lunes a viernes<br>
+                de 8:00 a.m. – 5:00pm<br>
+                sábados: 8:00 a.m. – 1:00 pm
+            </mat-card-subtitle>
+        </mat-card-header>
+        
+        
+        <mat-card-content>agenda con anterioridad tu revisión tecnico-mecanica.</mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button >AGENDA</button>
+        </mat-card-actions>
+       
+       
+               
+
+    </mat-card>
+    </div>
+    <div class="sub">
+    <mat-card>
+        
+        <mat-card-header>
+            
+            <mat-card-title> <mat-icon>assignment_ind</mat-icon></mat-card-title>
+            <mat-card-title>TRABAJA CON NOSOTROS</mat-card-title>
+            <mat-card-subtitle>
+                Horario de atención<br>
+                lunes a viernes<br>
+                de 8:00 a.m. – 5:00pm<br>
+                sábados: 8:00 a.m. – 1:00 pm
+            </mat-card-subtitle>
+        </mat-card-header>
+        
+        <mat-card-content>Si desea contactar a nuestra área de personal utilize este medio.</mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button >PORTAL ADMINISTRATIVO</button>
+        </mat-card-actions>
+               
+
+    </mat-card>
+    </div>
+    <div class="sub">
+    <mat-card>
+        
+        <mat-card-header>
+            
+            <mat-card-title> <mat-icon>perm_phone_msg</mat-icon></mat-card-title>
+            <mat-card-title>PQRSFA</mat-card-title>
+            <mat-card-subtitle>
+                Horario de atención<br>
+                lunes a viernes<br>
+                de 8:00 a.m. – 5:00pm<br>
+                sábados: 8:00 a.m. – 1:00 pm
+            </mat-card-subtitle>
+        </mat-card-header>
+        
+        
+        <mat-card-content>Si desea contactar a nuestra área de personal utilize este medio.</mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button >CONTACTANOS</button>
+        </mat-card-actions>
+               
+
+    </mat-card>
+    </div>
+
+</div>
